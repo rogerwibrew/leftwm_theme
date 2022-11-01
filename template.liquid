@@ -21,5 +21,14 @@
 %{A}
 {% endif %}
 {% endfor %}
+
+%{T1}
+%{O20}
+%{A1:leftwm-command "NextLayout" :}%{A3:leftwm-command "PreviousLayout" :}
+%{B#FFB300}%{F#1E1F29} · {{ workspace.layout }} · %{F-}%{B-}
+%{A}%{A}
+%{T-}
+
+
 %{c}
 {{ window_title }}
